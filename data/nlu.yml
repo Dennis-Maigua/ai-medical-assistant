@@ -1,0 +1,239 @@
+version: "3.1"
+
+nlu:
+  - intent: greet
+    examples: |
+      - Hey
+      - Hello
+      - Hi
+      - Hello there
+      - Good morning
+      - Good evening
+      - Hey there
+      - Let's go
+      - Hey dude
+      - Good afternoon
+      - Namaste
+      - Hola
+      - Hey Rasa
+
+  - intent: goodbye
+    examples: |
+      - See you
+      - Goodbye
+      - See you later
+      - Good night
+      - Bye
+      - Have a nice day
+      - See you around
+      - Bye-bye
+      - Talk to you later
+      - I have to go now
+
+  - intent: affirm
+    examples: |
+      - Yes
+      - Indeed
+      - Of course
+      - That sounds good
+      - Correct
+      - You are right
+      - Yeah
+      - Yup
+      - It helps
+      - Okay
+      - It's helpful
+      - It's helped a lot
+
+  - intent: thanks
+    examples: |
+      - Thanks
+      - Thanks a lot
+      - I appreciate your help
+      - Thanks, Medoc
+      - Thanks, mate
+
+  - intent: deny
+    examples: |
+      - No
+      - Never
+      - I don't think so
+      - I don't like that
+      - No way
+      - Not really
+      - Nope
+      - It doesn't help
+      - It's not what I want
+
+  - intent: mood_great
+    examples: |
+      - Perfect
+      - Great
+      - Amazing
+      - Feeling like a king
+      - Wonderful
+      - I am feeling very good
+      - I am great
+      - I am amazing
+      - I am going to save the world
+      - Super stoked
+      - Extremely good
+      - So perfect
+      - My experience is great
+      - I enjoy a lot
+
+  - intent: mood_unhappy
+    examples: |
+      - My day was horrible
+      - I am sad
+      - I don't feel very well
+      - I am disappointed
+      - Super sad
+      - I'm so sad
+      - Very sad
+      - Unhappy
+      - Not good
+      - Not very good
+      - Extremely sad
+      - So sad
+      - I am frustrated
+      - Suffering
+      - Too weak
+      - Am I so bad?
+      - I wanna cry
+
+  - intent: bot_challenge
+    examples: |
+      - Are you a bot?
+      - Are you a human?
+      - Am I talking to a bot?
+      - Am I talking to a human?
+      - Are you a bot or human?
+      - You seem like a human
+      - Who are you?
+      - Who am I talking to?
+
+  - intent: intro_unhappy
+    examples: |
+      - You are wrong
+      - Not at all
+      - You are bad
+      - You are too bad
+      - How bad you are
+      - You are too rude
+      - You are rude
+
+  - intent: get_name
+    examples: |
+      - My name is [Dennis](name)
+      - I'm [Dennis](name)
+      - You can call me [Dennis](name)
+
+  - intent: inform_symptoms
+    examples: |
+      - I have a headache
+      - My throat is sore
+      - I have constipation
+      - I feel tired
+      - I have breathing problems
+      - I have a runny nose
+      - I have a fever
+      - My leg hurts
+      - I'm experiencing vomiting
+      - I have a high body temperature
+      - My back is aching
+      - I feel nauseous
+      - My eyes are watery
+      - My nose is running
+      - I have a cough
+      - I'm feeling weak
+      - My stomach hurts
+      - I have chills
+      - I'm having difficulty breathing
+      - My joints are painful
+      - I have a rash
+      - I feel dizzy
+
+  - intent: ask_disease
+    examples: |
+      - I have a disease to ask about
+      - Tell me about a disease
+      - I want to know information about a disease
+      - I want to know about a disease
+      - Can you tell me about a disease?
+
+  - intent: question_disease
+    examples: |
+      - Tell me something about [Fever](disease)
+      - I want to know about [Cough](disease)
+      - What is [Fungal infection](disease)?
+      - I want to learn about [Acne](disease)
+      - Can you talk about [Heart attack](disease)?
+
+  - intent: inform_disease
+    examples: |
+      - [Fever](disease)
+      - [Cough](disease)
+      - [Fungal infection](disease)
+      - [Acne](disease)
+      - [Heart attack](disease)
+
+  - lookup: disease
+    examples: |
+      - Fungal infection
+      - Hepatitis C
+      - Hepatitis E
+      - Alcoholic hepatitis
+      - Tuberculosis
+      - Common Cold
+      - Pneumonia
+      - Dimorphic hemorrhoids (piles)
+      - Heart attack
+      - Varicose veins
+      - Hypothyroidism
+      - Hyperthyroidism
+      - Hypoglycemia
+      - Osteoarthritis
+      - Arthritis
+      - (vertigo) Paroxysmal Positional Vertigo
+      - Acne
+      - Urinary tract infection
+      - Psoriasis
+      - Hepatitis D
+      - Hepatitis B
+      - Allergy
+      - Hepatitis A
+      - GERD
+      - Chronic cholestasis
+      - Drug Reaction
+      - Peptic ulcer disease
+      - AIDS
+      - Diabetes
+      - Gastroenteritis
+      - Bronchial Asthma
+      - Hypertension
+      - Migraine
+      - Cervical spondylosis
+      - Paralysis (brain hemorrhage)
+      - Jaundice
+      - Malaria
+      - Chicken pox
+      - Dengue
+      - Typhoid
+      - Impetigo
+
+  - intent: give_time
+    examples: |
+      - What is the time now?
+      - What's the time?
+      - Tell me the time
+      - Do you know the time?
+      - The time, please
+      - What time is it?
+
+  - intent: hospital
+    examples: |
+      - Tell me the nearest 5 hospitals
+      - My coordinates are 88.5269 and 22.36589. Tell me the 3 nearest hospitals
+      - What are the nearest health centers to me?
+      - My latitude is 21.2356 and longitude is 88.23569. Tell me the 6 nearest hospitals

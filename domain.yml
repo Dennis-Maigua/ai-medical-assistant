@@ -1,0 +1,117 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - thanks
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - intro_unhappy
+  - get_name
+  - ask_disease
+  - inform_symptoms
+  - question_disease
+  - give_time
+  - inform_disease
+  - hospital
+
+entities:
+  - disease
+
+slots:
+  disease:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: disease
+
+actions:
+  - action_get_diagnosis
+  - action_give_time
+  - action_disease_info
+
+responses:
+  utter_greet:
+    - text: "Hey! Welcome. How can I assist you today?"
+    - text: "Hi there! Please let me know your symptoms."
+    - text: "Hello! I'm Medoc. How can I help you today?"
+
+  utter_did_that_help:
+    - text: "Did that help?"
+    - text: "Is this information helpful?"
+    - text: "Did you find a solution to your symptoms?"
+
+  utter_happy:
+    - text: "Great! Let me know if you have any other issues."
+    - text: "Fantastic! If you have more questions, feel free to ask."
+
+  utter_goodbye:
+    - text: "Goodbye! See you soon!"
+    - text: "Come back anytime for more assistance. Goodbye!"
+    - text: "Take care! Goodbye!"
+
+  utter_thanks:
+    - text: "No problem at all. I'm here to help."
+    - text: "Feel free to ask any questions. Always ready to assist."
+
+  utter_name:
+    - text: "Hi, I'm Medoc, your AI medical assistant. How can I help you today?"
+    - text: "Hello! I'm Medoc, your virtual healthcare assistant. Do you need any help?"
+    - text: "Hey! I'm Medoc, your personal medical chatbot. How can I assist you?"
+
+  utter_deny:
+    - text: "Can you repeat your problem? I'll try to find the best solution."
+    - text: "Sorry for the inconvenience. Please tell me your problem again."
+
+  utter_unhappy:
+    - text: "Don't worry, tell me your symptoms, and I'll find a solution."
+    - text: "Don't lose hope. Medoc is here to help you."
+      image: "https://dkk4qeqny48s0.cloudfront.net/wp-content/uploads/2019/02/chatbot_blog-1.jpg"
+
+  utter_bot:
+    - text: "I am Medoc, your virtual medical assistant. How can I assist you today?"
+    - text: "I am a your medical personal assistant powered by Rasa. How can I help you?"
+
+  utter_happy2:
+    - text: "Please tell me the disease you want information about."
+    - text: "Let me know the disease you want to learn about."
+
+  utter_deny2:
+    - text: "Okay, come back if you need any help."
+    - text: "No problem. Take care and reach out if you have more questions."
+
+  utter_deny3:
+    - text: "Can you tell me the disease again with the correct spelling?"
+    - text: "Sorry for the inconvenience. Please provide the correct spelling of the disease."
+
+  utter_ask_disease:
+    - text: "Sure! Please provide the name of the disease you want information about."
+    - text: "Of course! Tell me the name of the disease."
+    - text: "Sure, tell me the disease name."
+
+  utter_ask_more_info:
+    - text: "Did you get the information you were looking for? Is there anything else I can assist you with?"
+
+  utter_disease_info:
+    - text: "Here is some information about {disease}:\n{info}"
+      buttons:
+        - title: "More Info"
+          payload: "/more_info"
+
+  utter_no_info:
+    - text: "I'm sorry, I couldn't find information about that disease. Please try a different disease or check the spelling."
+    - text: "I'm really sorry. I couldn't find any information. Please try another disease or check the spelling."
+
+  utter_happy3:
+    - text: "Great! Let me know if you have any other problems. You can now get information about the disease, precautions, and nearest hospitals."
+
+  utter_hospital:
+    - text: "Find your nearest hospitals by following this link: [Nearest Hospitals](https://nearesthospitalchatbot-adbivic97cq.streamlit.app/) (open in a new tab)."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
