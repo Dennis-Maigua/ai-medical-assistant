@@ -35,14 +35,17 @@ This project implements a Conversational AI Chatbot using RASA Open Source Frame
 
 >**Note**: Make sure you have installed the latest version of [Git](https://git-scm.com/downloads) and [Python](https://www.python.org/downloads/release/python-31011/) before proceeding. By default, `pip` comes pre-installed with Python. Otherwise if not, you can download it from [here](https://bootstrap.pypa.io/get-pip.py) and open it to install automatically.
 
-Open a new terminal and run the following commands to confirm installation:
+### Step 1. Confirm Installation
+
+Open a new terminal and run the following commands:
+
   ```bash
     $ git --version
     $ python --version
     $ pip --version
   ```
 
-### Step 1. Clone the Repository
+### Step 2. Clone the Repository
 
 Download and extract the project into a folder:
 
@@ -51,7 +54,7 @@ Download and extract the project into a folder:
     $ git clone https://github.com/Dennis-Maigua/ai-medical-assistant.git
   ```
 
-### Step 2. Open the project
+### Step 3. Open the project
 
 Open the root folder of the project:
 
@@ -59,7 +62,7 @@ Open the root folder of the project:
     $ cd ai-medical-assistant-main
   ```
 
-### Step 3. Create a virtual environment
+### Step 4. Create a virtual environment
 
 Build a venv inside the root folder and activate it:
 
@@ -68,7 +71,7 @@ Build a venv inside the root folder and activate it:
    $ ./venv/Scripts/activate
   ```
    
-### Step 4. Install packages and dependencies
+### Step 5. Install packages and dependencies
 
 Install `rasa` and other python `requirements` (in the venv):
   
@@ -79,7 +82,7 @@ Install `rasa` and other python `requirements` (in the venv):
 
 # Testing and Performance
 
-### Step 5. Configure Rasa
+### Step 6. Configure Rasa
 
 Initialize Rasa configuration directly without prompts:
   
@@ -87,7 +90,7 @@ Initialize Rasa configuration directly without prompts:
    $ rasa init --no-prompt
   ```
 
-### Step 6. Move and Replace files
+### Step 7. Move and Replace files
 
 Inside the root folder `(ai-medical-assistant-main)`, there is another inner folder `(ai-medical-assistant-main)`.
 
@@ -98,7 +101,7 @@ Inside the root folder `(ai-medical-assistant-main)`, there is another inner fol
     # - Then delete the empty inner folder
   ```
 
-### Step 7. Train the model
+### Step 8. Train the model
 
 Train NLU and dialogue management models on annotated datasets for the chatbot:
   
@@ -106,7 +109,7 @@ Train NLU and dialogue management models on annotated datasets for the chatbot:
    $ rasa train
   ```
 
-### Step 8. Interact with the Chatbot
+### Step 9. Interact with the Chatbot
 
 On the same terminal, run the Actions:
 
