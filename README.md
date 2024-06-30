@@ -10,30 +10,30 @@ This project implements a Conversational AI Chatbot using RASA Open Source Frame
 
 # Design
 
-### 1. Natural Language Understanding (NLU)
+### Natural Language Understanding (NLU)
 - **Intent Classification**: Identifies the intent or purpose behind user messages (e.g., booking an appointment, asking a question).
 - **Entity Recognition**: Extracts specific pieces of information (entities) from user messages (e.g., dates, names, symptoms).
 
-### 2. Dialogue Management
+### Dialogue Management
 - **State Management**: Tracks the context of the conversation to maintain coherence and relevance in responses over multiple turns.
 - **Policy-Based Decision Making**: Determines the next action or response based on the current dialogue state, past interactions, and predefined rules or machine learning models.
 
-### 3. Responses and Actions
+### Responses and Actions
 - Response Generation: Crafts appropriate replies or actions based on identified intents, entities, and current dialogue context.
 - Action Execution: Performs backend operations (e.g., database queries, API calls) to fulfill user requests or provide information.
   
-### 4. Training Pipeline:
+### Training Pipeline:
 - **Data Annotation**: Involves labeling datasets with intents and entities to train the NLU model effectively.
 - **Model Training**: Uses machine learning algorithms (often neural networks) to train NLU and dialogue management models on annotated datasets.
 - **Evaluation and Iteration**: Tests and refines the chatbot's performance based on real or simulated interactions to improve accuracy and user satisfaction.
 
-### 5. Integration and Deployment:
+### Integration and Deployment:
 - **Platform Integration**: Allows deployment on various platforms (e.g., web, mobile apps, messaging platforms) to interact with users where they are.
 - **Continuous Learning**: Supports ongoing updates and improvements based on user feedback and evolving needs.
 
 # Setup
 
-### 1. Clone the repository
+### Step 1. Clone the repository
 
 Download and open the project in your local machine:
 
@@ -43,7 +43,7 @@ Download and open the project in your local machine:
     $ cd ai-medical-assistant-main/ai-medical-assistant-main
   ```
 
-### 2. Create a virtual environment
+### Step 2. Create a virtual environment
 
 Build a venv and activate it inside the project:
 
@@ -52,7 +52,7 @@ Build a venv and activate it inside the project:
      $ ./venv/Scripts/activate
    ```
    
-### 3. Install packages and dependencies
+### Step 3. Install packages and dependencies
 
 Install `rasa` and python `requirements`:
   
@@ -63,7 +63,7 @@ Install `rasa` and python `requirements`:
 
 # Testing and Performance
 
-### 1. Train the model
+### Step 4. Train the model
 
 Map all the datasets, intents, responses, and actions for the chatbot:
   
@@ -71,7 +71,7 @@ Map all the datasets, intents, responses, and actions for the chatbot:
      $ rasa train
    ```
 
-### 2. Interact with the Chatbot
+### Step 5. Interact with the Chatbot
 
 - Open Terminal 1 and run:
 
