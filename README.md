@@ -52,24 +52,24 @@ Download and extract the project into a folder:
     $ git clone https://github.com/Dennis-Maigua/ai-medical-assistant.git
   ```
 
-### Step 3. Open the project
+### Step 3. Open the Project
 
-Open the root folder of the project:
+Open the inner folder of the project:
 
   ```bash
-    $ cd ai-medical-assistant-main
+    $ cd ai-medical-assistant-main/ai-medical-assistant-main
   ```
 
-### Step 4. Create a virtual environment
+### Step 4. Create a Virtual Environment
 
-Build a venv inside the root folder and activate it:
+Build a venv inside the inner folder and activate it:
 
   ```bash
    $ python -m venv venv
-   $ ./venv/Scripts/activate
+   $ venv/Scripts/activate
   ```
    
-### Step 5. Install packages and dependencies
+### Step 5. Install Packages and Dependencies
 
 Install `rasa` and other python `requirements` (in the venv):
   
@@ -80,26 +80,7 @@ Install `rasa` and other python `requirements` (in the venv):
 
 # Testing and Performance
 
-### Step 6. Configure Rasa
-
-Initialize Rasa configuration directly without prompts:
-  
-  ```bash
-   $ rasa init --no-prompt
-  ```
-
-### Step 7. Move and Replace files
-
-Inside the root folder `ai-medical-assistant-main`, there is a similar inner folder `ai-medical-assistant-main`.
-
-  ```bash
-    ### FOLLOW THE INSTRUCTIONS BELOW !!! ###
-    # - Move all the files from the inner folder to the root folder
-    # - Replace the existing replicas in the root folder
-    # - Then delete the empty inner folder
-  ```
-
-### Step 8. Train the model
+### Step 6. (Optional) Train the Model
 
 Train NLU and dialogue management models on annotated datasets for the chatbot:
   
@@ -107,15 +88,15 @@ Train NLU and dialogue management models on annotated datasets for the chatbot:
    $ rasa train
   ```
 
-### Step 9. Interact with the Chatbot
+### Step 7. Run the Chatbot
 
-On the same terminal, run the Actions:
+On the terminal, run the Actions:
 
   ```bash
     $ rasa run actions
   ```
 
-Open another terminal and run the Chatbot:
+Open another terminal, and run the Sanic server:
 
   ```bash
     $ rasa shell
@@ -123,4 +104,4 @@ Open another terminal and run the Chatbot:
 
 # Contributing:
 
-We welcome contributions from developers, IT experts, and technology enthusiasts. Feel free to fork the repository, make improvements, and submit pull requests.
+We welcome contributions from developers, IT experts, and technology enthusiasts. Feel free to fork the repository, make improvements, and submit pull requests. Happy coding!

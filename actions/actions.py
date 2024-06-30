@@ -135,9 +135,9 @@ class ActionDiseaseInfo(Action):
                 return []
             
             wiki_wiki = wikipediaapi.Wikipedia(
+                user_agent="ai-medical-assistant/1.0 (https://viralynk.com)",
                 language='en',
-                extract_format=wikipediaapi.ExtractFormat.WIKI,
-                user_agent="ai-medical-assistant/1.0 (https://viralynk.com)"
+                extract_format=wikipediaapi.ExtractFormat.WIKI
             )
             page = wiki_wiki.page(disease)
 
