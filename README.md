@@ -65,7 +65,7 @@ Install `rasa` and python `requirements`:
 
 ### Step 4. Train the model
 
-Map all the datasets, intents, responses, and actions for the chatbot:
+Model all the datasets, intents, responses, and actions for the chatbot:
   
    ```bash
      $ rasa train
