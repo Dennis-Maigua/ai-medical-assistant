@@ -108,13 +108,13 @@ Train NLU and dialogue management models on annotated datasets for the chatbot:
 
 ### Step 8. Interact with the Chatbot
 
-- On the same terminal, run the Actions:
+On the same terminal, run the Actions:
 
   ```bash
     $ rasa run actions
   ```
 
-- Open another terminal and run the Chatbot:
+Open another terminal and run the Chatbot:
 
   ```bash
     $ rasa shell
