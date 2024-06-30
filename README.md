@@ -8,7 +8,7 @@ This project is licensed under the MIT license.
 
 This project implements a Conversational AI using RASA Open Source Framework. The Chatbot requests the user's symptoms, identifies the disease (diagnosis), recommends medication or doctor consultation, and provides information about any disease (if asked by a user) through the WikipediaApi.
 
-# Design features
+# Design Features
 
 ### Natural Language Understanding (NLU)
 
@@ -93,6 +93,8 @@ Install `rasa` and other python `requirements` (in the venv):
   ```
 
 # Testing and Performance
+
+>**Note**: Ignore all Deprecation Warnings in Red and Yellow colors! Errors showing code breaking changes are shown in white of which there are none.😊
 
 ### Step 6. (Optional) Train the Model
 
