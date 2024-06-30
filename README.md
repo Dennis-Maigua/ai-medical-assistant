@@ -2,7 +2,7 @@
 
 This project is licensed under the MIT license.
 
-# AI Medical Assistant
+# Medoc - AI Medical Assistant
 
 ![chatbot_blog-1](https://github.com/Dennis-Maigua/ai-medical-assistant/assets/32156551/37f7de8b-e13c-42fd-a711-09d6122677cb)
 
