@@ -92,10 +92,10 @@ Initialize Rasa configuration directly without prompts:
 Inside the root folder `(ai-medical-assistant-main)`, there is another inner folder `(ai-medical-assistant-main)`.
 
   ```bash
-    --- FOLLOW THE INSTRUCTIONS BELOW !!! ---
-    # 1. move all the files from the inner folder to the root folder
-    # 2. replace the existing replicas in the root folder
-    # 3. then delete the empty inner folder
+    ### FOLLOW THE INSTRUCTIONS BELOW !!! ###
+    # - Move all the files from the inner folder to the root folder
+    # - Replace the existing replicas in the root folder
+    # - Then delete the empty inner folder
   ```
 
 ### Step 7. Train the model
