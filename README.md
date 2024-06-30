@@ -10,24 +10,24 @@ This project implements a Conversational AI Chatbot using RASA Open Source Frame
 
 # Design Features
 
-### i. Natural Language Understanding (NLU)
+### 1. Natural Language Understanding (NLU)
 - **Intent Classification**: Identifies the intent or purpose behind user messages (e.g., requesting information, asking a question).
 - **Entity Recognition**: Extracts specific pieces of information (entities) from user messages (e.g., names, diseases, symptoms).
 
-### ii. Dialogue Management
+### 2. Dialogue Management
 - **State Management**: Tracks the context of the conversation to maintain coherence and relevance in responses over multiple turns.
 - **Policy-Based Decision Making**: Determines the next action or response based on the current dialogue state, past interactions, and predefined rules.
 
-### iii. Responses and Actions
+### 3. Responses and Actions
 - Response Generation: Crafts appropriate replies or actions based on identified intents, entities, and current dialogue context.
 - Action Execution: Performs backend operations (e.g., database queries, API calls) to fulfill user requests or provide information.
   
-### iv. Training Pipeline:
+### 4. Training Pipeline:
 - **Data Annotation**: Involves labeling datasets with intents and entities to train the NLU model effectively.
 - **Model Training**: Uses machine learning algorithms (often neural networks) to train NLU and dialogue management models on annotated datasets.
 - **Evaluation and Iteration**: Tests and refines the chatbot's performance based on real or simulated interactions to improve accuracy and user satisfaction.
 
-### v. Integration and Deployment:
+### 5. Integration and Deployment:
 - **Platform Integration**: Allows deployment on various platforms (e.g., web, apps, messaging platforms) to interact with users where they are.
 - **Continuous Learning**: Supports ongoing updates and improvements based on user feedback and evolving needs.
 
