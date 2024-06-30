@@ -92,7 +92,7 @@ Initialize Rasa configuration directly without prompts:
 
 ### Step 7. Move and Replace files
 
-Inside the root folder `ai-medical-assistant-main`, there is another inner folder (ai-medical-assistant-main).
+Inside the root folder (ai-medical-assistant-main), there is a similar inner folder `ai-medical-assistant-main`.
 
   ```bash
     ### FOLLOW THE INSTRUCTIONS BELOW !!! ###
