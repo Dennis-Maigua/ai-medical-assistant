@@ -6,7 +6,9 @@ This project is licensed under the MIT license.
 
 ![chatbot_blog-1](https://github.com/Dennis-Maigua/ai-medical-assistant/assets/32156551/37f7de8b-e13c-42fd-a711-09d6122677cb)
 
-This project implements a Conversational AI Chatbot using RASA Open Source Framework with the following design features:
+This project implements a Conversational AI using RASA Open Source Framework. The Chatbot requests the user's symptoms, identifies the disease (diagnosis), recommends medication or doctor consultation, and provides information about any disease if asked by a user.
+
+# Design features
 
 ### Natural Language Understanding (NLU)
 - **Intent Classification**: Identifies the intent or purpose behind user messages (e.g., requesting information, asking a question).
@@ -20,12 +22,12 @@ This project implements a Conversational AI Chatbot using RASA Open Source Frame
 - **Response Generation**: Crafts appropriate replies or actions based on identified intents, entities, and current dialogue context.
 - **Action Execution**: Performs backend operations (e.g., database queries, API calls) to fulfill user requests or provide information.
   
-### Training Pipeline:
+### Training Pipeline
 - **Data Annotation**: Involves labeling datasets with intents and entities to train the NLU model effectively.
 - **Model Training**: Uses machine learning algorithms (often neural networks) to train NLU and dialogue management models on annotated datasets.
 - **Evaluation and Iteration**: Tests and refines the chatbot's performance based on real or simulated interactions to improve accuracy and user satisfaction.
 
-### Integration and Deployment:
+### Integration and Deployment
 - **Platform Integration**: Allows deployment on various platforms (e.g., web, apps, messaging platforms) to interact with users where they are.
 - **Continuous Learning**: Supports ongoing updates and improvements based on user feedback and evolving needs.
 
@@ -75,6 +77,7 @@ Install `rasa` and other python `requirements` (in the venv):
   
   ```bash
    $ pip install rasa
+   $ rasa --version 
    $ pip install -r requirements.txt
   ```
 
