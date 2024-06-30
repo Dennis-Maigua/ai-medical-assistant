@@ -42,28 +42,35 @@ Open a new terminal and run the following commands to confirm installation:
     $ pip --version
   ```
 
-### Step 1. Clone the repository
+### Step 1. Clone the Repository
 
-Download and open the project in your local machine:
+Download and extract the project into a folder:
 
   ```bash
     $ cd Desktop
     $ git clone https://github.com/Dennis-Maigua/ai-medical-assistant.git
-    $ cd ai-medical-assistant-main/ai-medical-assistant-main
   ```
 
-### Step 2. Create a virtual environment
+### Step 2. Open the project
 
-Build a venv and activate it inside the project:
+Open the root folder of the project:
+
+  ```bash
+    $ cd ai-medical-assistant-main
+  ```
+
+### Step 3. Create a virtual environment
+
+Build a venv inside the root folder and activate it:
 
   ```bash
    $ python -m venv venv
    $ ./venv/Scripts/activate
   ```
    
-### Step 3. Install packages and dependencies
+### Step 4. Install packages and dependencies
 
-Install `rasa` and python `requirements` in the venv:
+Install `rasa` and other python `requirements` (in the venv):
   
   ```bash
    $ pip install rasa
@@ -72,15 +79,33 @@ Install `rasa` and python `requirements` in the venv:
 
 # Testing and Performance
 
-### Step 4. Train the model
+### Step 5. Configure Rasa
 
-Model all the datasets, intents, responses, and actions for the chatbot:
+Initialize Rasa configuration directly without prompts:
+  
+  ```bash
+   $ rasa init --no-prompt
+  ```
+
+### Step 6. Move and Replace files
+
+Inside the root folder `(ai-medical-assistant-main)`, there is another inner folder `(ai-medical-assistant-main)`.
+
+  ```bash
+    # move all the files from the inner folder to the root folder
+    # replace the existing replicas in the root folder
+    # then delete the empty inner folder
+  ```
+
+### Step 7. Train the model
+
+Train NLU and dialogue management models on annotated datasets for the chatbot:
   
   ```bash
    $ rasa train
   ```
 
-### Step 5. Interact with the Chatbot
+### Step 8. Interact with the Chatbot
 
 - On the same terminal, run the Actions:
 
