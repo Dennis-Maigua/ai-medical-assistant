@@ -94,7 +94,7 @@ Install `rasa` and other python `requirements` (in the venv):
 
 # Testing and Performance
 
->**Note**: Ignore all Deprecation Warnings in Red and Yellow colors! Errors showing code breaking changes are shown in white of which there are none.😊
+>**Note**: Ignore all Deprecation Warnings in Red and Yellow colors. Errors showing code breaking changes are displayed in white text of which there are none. Enjoy! 😊
 
 ### Step 6. (Optional) Train the Model
 
