@@ -35,7 +35,7 @@ This project implements a Conversational AI Chatbot using RASA Open Source Frame
 
 >**Note**: Make sure you have installed the latest version of [Git](https://git-scm.com/downloads) and [Python](https://www.python.org/downloads/release/python-31011/) before proceeding. By default, `pip` comes pre-installed with Python. Otherwise if not, you can download it from [here](https://bootstrap.pypa.io/get-pip.py) and open it to install automatically.
 
-Run the following commands on a terminal to confirm installation:
+Open a new terminal and run the following commands to confirm installation:
   ```bash
     $ git --version
     $ python --version
@@ -88,7 +88,7 @@ Model all the datasets, intents, responses, and actions for the chatbot:
     $ rasa run actions
   ```
 
-- Open a new terminal and run the Chatbot:
+- Open another terminal and run the Chatbot:
 
   ```bash
     $ rasa shell
