@@ -76,13 +76,13 @@ Map all the datasets, intents, responses, and actions for the chatbot:
 - Open Terminal 1 and run:
 
 ```bash
-    # rasa run actions
+    $ rasa run actions
 ```
 
 - Open Terminal 2 and run:
 
 ```bash
-    # rasa shell
+    $ rasa shell
 ```
 
 # Contributing:
