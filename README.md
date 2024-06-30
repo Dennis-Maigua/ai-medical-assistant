@@ -8,7 +8,7 @@ This project is licensed under the MIT license.
 
 This project implements a Conversational AI Chatbot using RASA Open Source Framework, Flask, and Python.
 
-# Design / Features
+# Design Features
 
 ### i. Natural Language Understanding (NLU)
 - **Intent Classification**: Identifies the intent or purpose behind user messages (e.g., requesting information, asking a question).
@@ -31,7 +31,9 @@ This project implements a Conversational AI Chatbot using RASA Open Source Frame
 - **Platform Integration**: Allows deployment on various platforms (e.g., web, apps, messaging platforms) to interact with users where they are.
 - **Continuous Learning**: Supports ongoing updates and improvements based on user feedback and evolving needs.
 
-# Setup / Installation
+# Setup Installation
+
+>**Note**: Make sure you have installed the latest version of [Git](https://git-scm.com/downloads) and [Python v3.10.11](https://www.python.org/downloads/release/python-31011/) before proceeding. By default, `Pip` comes pre-installed with Python, otherwise you can download it from [here](https://bootstrap.pypa.io/get-pip.py) then click/open it to install automatically.
 
 ### Step 1. Clone the repository
 
