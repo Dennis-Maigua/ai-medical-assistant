@@ -33,7 +33,14 @@ This project implements a Conversational AI Chatbot using RASA Open Source Frame
 
 # Setup Installation
 
->**Note**: Make sure you have installed the latest version of [Git](https://git-scm.com/downloads) and [Python](https://www.python.org/downloads/release/python-31011/) before proceeding. By default, `pip` comes pre-installed with Python, otherwise you can download it from [here](https://bootstrap.pypa.io/get-pip.py), then click and open it to install pip automatically.
+>**Note**: Make sure you have installed the latest version of [Git](https://git-scm.com/downloads) and [Python](https://www.python.org/downloads/release/python-31011/) before proceeding. By default, `pip` comes pre-installed with Python. Otherwise if not, you can download it from [here](https://bootstrap.pypa.io/get-pip.py) and open it to install automatically.
+
+Run the following commands on a terminal to confirm installation:
+  ```bash
+    $ git --version
+    $ python --version
+    $ pip --version
+  ```
 
 ### Step 1. Clone the repository
 
@@ -49,19 +56,19 @@ Download and open the project in your local machine:
 
 Build a venv and activate it inside the project:
 
-   ```bash
-     $ python -m venv venv
-     $ ./venv/Scripts/activate
-   ```
+  ```bash
+   $ python -m venv venv
+   $ ./venv/Scripts/activate
+  ```
    
 ### Step 3. Install packages and dependencies
 
 Install `rasa` and python `requirements`:
   
-   ```bash
-     $ pip install rasa
-     $ pip install -r requirements.txt
-   ```
+  ```bash
+   $ pip install rasa
+   $ pip install -r requirements.txt
+  ```
 
 # Testing and Performance
 
@@ -69,23 +76,23 @@ Install `rasa` and python `requirements`:
 
 Model all the datasets, intents, responses, and actions for the chatbot:
   
-   ```bash
-     $ rasa train
-   ```
+  ```bash
+   $ rasa train
+  ```
 
 ### Step 5. Interact with the Chatbot
 
 - Open Terminal 1 and run:
 
-```bash
+  ```bash
     $ rasa run actions
-```
+  ```
 
 - Open Terminal 2 and run:
 
-```bash
+  ```bash
     $ rasa shell
-```
+  ```
 
 # Contributing:
 
