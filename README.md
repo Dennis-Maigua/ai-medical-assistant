@@ -33,7 +33,7 @@ This project implements a Conversational AI Chatbot using RASA Open Source Frame
 
 # Setup Installation
 
->**Note**: Make sure you have installed the latest version of [Git](https://git-scm.com/downloads) and [Python v3.10.11](https://www.python.org/downloads/release/python-31011/) before proceeding. By default, `Pip` comes pre-installed with Python, otherwise you can download it from [here](https://bootstrap.pypa.io/get-pip.py) then click/open it to install automatically.
+>**Note**: Make sure you have installed the latest version of [Git](https://git-scm.com/downloads) and [Python](https://www.python.org/downloads/release/python-31011/) before proceeding. By default, `pip` comes pre-installed with Python, otherwise you can download it from [here](https://bootstrap.pypa.io/get-pip.py), then click and open it to install pip automatically.
 
 ### Step 1. Clone the repository
 
