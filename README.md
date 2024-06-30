@@ -11,12 +11,12 @@ This project implements a Conversational AI Chatbot using RASA Open Source Frame
 # Design
 
 ### Natural Language Understanding (NLU)
-- **Intent Classification**: Identifies the intent or purpose behind user messages (e.g., booking an appointment, asking a question).
-- **Entity Recognition**: Extracts specific pieces of information (entities) from user messages (e.g., dates, names, symptoms).
+- **Intent Classification**: Identifies the intent or purpose behind user messages (e.g., requesting information, asking a question).
+- **Entity Recognition**: Extracts specific pieces of information (entities) from user messages (e.g., names, diseases, symptoms).
 
 ### Dialogue Management
 - **State Management**: Tracks the context of the conversation to maintain coherence and relevance in responses over multiple turns.
-- **Policy-Based Decision Making**: Determines the next action or response based on the current dialogue state, past interactions, and predefined rules or machine learning models.
+- **Policy-Based Decision Making**: Determines the next action or response based on the current dialogue state, past interactions, and predefined rules.
 
 ### Responses and Actions
 - Response Generation: Crafts appropriate replies or actions based on identified intents, entities, and current dialogue context.
@@ -28,7 +28,7 @@ This project implements a Conversational AI Chatbot using RASA Open Source Frame
 - **Evaluation and Iteration**: Tests and refines the chatbot's performance based on real or simulated interactions to improve accuracy and user satisfaction.
 
 ### Integration and Deployment:
-- **Platform Integration**: Allows deployment on various platforms (e.g., web, mobile apps, messaging platforms) to interact with users where they are.
+- **Platform Integration**: Allows deployment on various platforms (e.g., web, apps, messaging platforms) to interact with users where they are.
 - **Continuous Learning**: Supports ongoing updates and improvements based on user feedback and evolving needs.
 
 # Setup
