@@ -63,7 +63,7 @@ Build a venv and activate it inside the project:
    
 ### Step 3. Install packages and dependencies
 
-Install `rasa` and python `requirements`:
+Install `rasa` and python `requirements` in the venv:
   
   ```bash
    $ pip install rasa
@@ -82,13 +82,13 @@ Model all the datasets, intents, responses, and actions for the chatbot:
 
 ### Step 5. Interact with the Chatbot
 
-- Open Terminal 1 and run:
+- On the same terminal, run the Actions:
 
   ```bash
     $ rasa run actions
   ```
 
-- Open Terminal 2 and run:
+- Open a new terminal and run the Chatbot:
 
   ```bash
     $ rasa shell
