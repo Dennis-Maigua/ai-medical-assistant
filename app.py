@@ -4,9 +4,11 @@ import requests
 RASA_API_URL = 'http://localhost:5005/webhooks/rest/webhook'
 app = Flask(__name__)
 
+
 @app.route('/')
 def index():
     return render_template('index.html')
+
 
 @app.route('/chat', methods=['POST'])
 def chat():
@@ -19,6 +21,7 @@ def chat():
     print("\nChatbot:", bot_response)
 
     return jsonify(bot_response)
+
 
 if __name__ == "__main__":
     app.run(debug=True, port=3000)
