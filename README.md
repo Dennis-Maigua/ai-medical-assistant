@@ -112,10 +112,21 @@ On the terminal, run the Actions:
     $ rasa run actions
   ```
 
-Open another terminal, and run the Sanic server:
+Open another terminal 2, and run the Rasa Server:
 
   ```bash
+    $ venv/Scripts/activate
+    $ rasa run --model models --enable-api --cors "*"
+
+    # OR for terminal interactions
     $ rasa shell
+  ```
+
+Open another terminal 3, run the Flask Client:
+
+  ```bash
+    $ venv/Scripts/activate
+    $ python app.py
   ```
 
 # Contributing:

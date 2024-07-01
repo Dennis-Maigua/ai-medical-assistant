@@ -87,7 +87,22 @@
                 chatboxBody.scrollTop = chatboxBody.scrollHeight;
             }
 
+            function displayLoadingDots() {
+                var chatboxBody = document.getElementById('chatbox-body');
+                var loadingMessage = document.createElement('div');
+                loadingMessage.classList.add('chat-message', 'bot');
+                loadingMessage.innerHTML = '<span class="loading-dots"></span><span class="loading-dots"></span><span class="loading-dots"></span>';
+                chatboxBody.appendChild(loadingMessage);
+
+                // Scroll to the bottom of the chatbox
+                chatboxBody.scrollTop = chatboxBody.scrollHeight;
+
+                return loadingMessage;
+            }
+
             function sendMessageToBot(message) {
+                var loadingElement = displayLoadingDots();
+
                 fetch('/chat', {
                     method: 'POST',
                     headers: {
@@ -98,12 +113,19 @@
                     .then(response => response.json())
                     .then(data => {
                         if (data && data.length > 0) {
+                            // Remove loading dots
+                            loadingElement.remove();
+
                             data.forEach(botMessage => {
                                 displayMessage(botMessage.text, 'bot')
                             });
                         }
                     })
-                    .catch(err => console.error('Error:', error));
+                    .catch(err => {
+                        console.error('Error:', error)
+                        // Remove loading dots if there's an error
+                        loadingElement.remove();
+                    });
             }
         </script>
     </div>
