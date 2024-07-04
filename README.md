@@ -10,45 +10,19 @@ This project implements a Conversational AI using RASA Open Source Framework. Th
 
 # Design Features
 
-### Natural Language Understanding (NLU)
+1. Natural Language Understanding (NLU).
 
-- **Intent Classification**: Identifies the intent or purpose behind user messages (e.g., requesting information, asking a question).
-
-- **Entity Recognition**: Extracts specific pieces of information (entities) from user messages (e.g., names, diseases, symptoms).
-
-### Dialogue Management
-
-- **State Management**: Tracks the context of the conversation to maintain coherence and relevance in responses over multiple turns.
-
-- **Policy-Based Decision Making**: Determines the next action or response based on the current dialogue state, past interactions, and predefined rules.
-
-### Responses and Actions
-
-- **Response Generation**: Crafts appropriate replies or actions based on identified intents, entities, and current dialogue context.
-
-- **Action Execution**: Performs backend operations (e.g., database queries, API calls) to fulfill user requests or provide information.
+2. Dialogue Management.
   
-### Training Pipeline
+3. Training Pipeline.
 
-- **Data Annotation**: Involves labeling datasets with intents and entities to train the NLU model effectively.
+4. Integration and Deployment.
 
-- **Model Training**: Uses machine learning algorithms (often neural networks) to train NLU and dialogue management models on annotated datasets.
-
-- **Evaluation and Iteration**: Tests and refines the chatbot's performance based on real or simulated interactions to improve accuracy and user satisfaction.
-
-### Integration and Deployment
-
-- **Platform Integration**: Allows deployment on various platforms (e.g., web, apps, messaging platforms) to interact with users where they are.
-
-- **Continuous Learning**: Supports ongoing updates and improvements based on user feedback and evolving needs.
-
-# Setup Installation
+# Environment (Windows, Mac, Linux)
 
 >**Note**: Make sure you have installed the latest version of [Git](https://git-scm.com/downloads) and [Python](https://www.python.org/downloads/release/python-31011/) before proceeding. By default, `pip` comes pre-installed with Python. If missing, you can download it [here](https://bootstrap.pypa.io/get-pip.py) and open to install it automatically.
 
-### Step 1. Confirm Installation
-
-Open a new terminal and run the following commands:
+Open a new terminal and run the following commands (one-by-one):
 
   ```bash
     $ git --version
@@ -56,35 +30,30 @@ Open a new terminal and run the following commands:
     $ pip --version
   ```
 
-### Step 2. Clone the Repository
+# Setup Installation
 
-Download and extract the project into a folder:
+### Step 1. Clone the Repository
+
+Clone and open the project in your local machine (desktop):
 
   ```bash
     $ cd Desktop
     $ git clone https://github.com/Dennis-Maigua/ai-medical-assistant.git
+    $ cd ai-medical-assistant
   ```
 
-### Step 3. Open the Project
+### Step 2. Create a Virtual Environment
 
-Open the inner folder of the project:
-
-  ```bash
-    $ cd ai-medical-assistant-main/ai-medical-assistant-main
-  ```
-
-### Step 4. Create a Virtual Environment
-
-Build a venv inside the inner folder and activate it:
+Build and activate a venv folder inside the project:
 
   ```bash
    $ python -m venv venv
    $ venv/Scripts/activate
   ```
    
-### Step 5. Install Packages and Dependencies
+### Step 3. Install Packages and Dependencies
 
-Install `rasa` and other python `requirements` (in the venv):
+Install `rasa` and python `requirements` for running the project:
   
   ```bash
    $ pip install rasa
@@ -94,31 +63,35 @@ Install `rasa` and other python `requirements` (in the venv):
 
 # Testing and Performance
 
->**Note**: Ignore all Deprecation Warnings in Red and Yellow colors. Errors showing code breaking changes are displayed in white text of which there are none. Enjoy! 😊
+>**Note**: Ignore all Deprecation Warnings in colors Red and Yellow! Errors or bugs that break the code functionality should be displayed in white, of which there are none currently. 😊
 
-### Step 6. (Optional) Train the Model
+### Step 4. Train the Model
 
-Train NLU and dialogue management models on annotated datasets for the chatbot:
+Always train the NLU model after making any code changes to update the chatbot:
   
   ```bash
    $ rasa train
   ```
 
-### Step 7. Run the Chatbot
+### Step 5. Run the Chatbot
 
-On the terminal, run the Actions:
+Open another separate terminal and the following commands:
+
+- Terminal 1 (Actions):
 
   ```bash
     $ rasa run actions
   ```
 
-Open another terminal 2, and run the Rasa Server:
+- Terminal 2, (Rasa Server):
 
   ```bash
+    # For UI chatbot
     $ venv/Scripts/activate
     $ rasa run --model models --enable-api --cors "*"
 
-    # OR for terminal interactions
+    # For terminal chatbot
+    $ venv/Scripts/activate
     $ rasa shell
   ```
 
