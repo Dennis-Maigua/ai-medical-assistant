@@ -34,7 +34,7 @@ Open a new terminal and run the following commands (one-by-one):
 
 ### Step 1. Clone the Repository
 
-Clone and open the project in your local machine (desktop):
+Clone and open the project in your local machine `desktop`:
 
   ```bash
     $ cd Desktop
@@ -44,7 +44,7 @@ Clone and open the project in your local machine (desktop):
 
 ### Step 2. Create a Virtual Environment
 
-Build and activate a venv folder inside the project:
+Build and activate a `venv` folder inside the project:
 
   ```bash
    $ python -m venv venv
@@ -53,7 +53,7 @@ Build and activate a venv folder inside the project:
    
 ### Step 3. Install Packages and Dependencies
 
-Install `rasa` and python `requirements` for running the project:
+Install `rasa` and `python requirements` for running the project:
   
   ```bash
    $ pip install rasa
@@ -67,7 +67,7 @@ Install `rasa` and python `requirements` for running the project:
 
 ### Step 4. Train the Model
 
-Always train the NLU model after making any code changes to update the chatbot:
+Always train the `NLU model` after making any code changes to `update` the chatbot:
   
   ```bash
    $ rasa train
@@ -75,7 +75,7 @@ Always train the NLU model after making any code changes to update the chatbot:
 
 ### Step 5. Run the Chatbot
 
-Open another two separate terminals and run the following commands:
+Open another `two` separate terminals and run the following commands:
 
 - Terminal 1 (Actions):
 
