@@ -75,7 +75,7 @@ Always train the NLU model after making any code changes to update the chatbot:
 
 ### Step 5. Run the Chatbot
 
-Open another separate terminal and the following commands:
+Open another two separate terminals and run the following commands:
 
 - Terminal 1 (Actions):
 
@@ -83,19 +83,19 @@ Open another separate terminal and the following commands:
     $ rasa run actions
   ```
 
-- Terminal 2, (Rasa Server):
+- Terminal 2 (Rasa Server):
 
   ```bash
-    # For UI chatbot
+    # For frontend chatbot
     $ venv/Scripts/activate
     $ rasa run --model models --enable-api --cors "*"
 
-    # For terminal chatbot
+    # For backend chatbot
     $ venv/Scripts/activate
     $ rasa shell
   ```
 
-Open another terminal 3, run the Flask Client:
+- Terminal 3 (Frontend Chatbot):
 
   ```bash
     $ venv/Scripts/activate
